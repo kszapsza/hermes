@@ -1,4 +1,14 @@
 {
+  "readinessDatacenters": [
+    {
+      "datacenter":  "DC1",
+      "isReady": true
+    },
+    {
+      "datacenter":  "DC2",
+      "isReady": false
+    }
+  ],
   "topics": [
     {
       "id": "pl.allegro.public.group.DummyEvent",

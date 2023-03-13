@@ -1,4 +1,21 @@
 const en_US = {
+  readiness: {
+    title: 'Datacenters Readiness:',
+    turnOn: 'Turn on',
+    turnOff: 'Turn off',
+    index: 'Index',
+    datacenter: 'Datacenter',
+    isReady: 'Is ready',
+    control: 'Control',
+    breadcrumbs: {
+      home: 'home',
+      title: 'readiness',
+    },
+    connectionError: {
+      title: 'Connection error',
+      text: 'Could not fetch information about datacenters readiness',
+    },
+  },
   subscription: {
     connectionError: {
       title: 'Connection error',
