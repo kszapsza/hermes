@@ -53,6 +53,7 @@
                     v-if="!item.isReady"
                     prepend-icon="mdi-console-line"
                     color="green"
+                    block
                   >
                     {{ t('readiness.turnOn') }}</v-btn
                   >
@@ -60,6 +61,7 @@
                     v-if="item.isReady"
                     prepend-icon="mdi-console-line"
                     color="red"
+                    block
                   >
                     {{ t('readiness.turnOff') }}</v-btn
                   >

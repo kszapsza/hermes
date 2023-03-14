@@ -1,9 +1,47 @@
 const en_US = {
+  constraints: {
+    connectionError: {
+      title: 'Connection error',
+      text: 'Could not fetch information about constraints',
+    },
+    topicConstraints: {
+      heading: 'Topic constraints',
+      actions: {
+        create: 'Add constraint',
+        search: 'Search topic constraints...',
+      },
+    },
+    subscriptionConstraints: {
+      heading: 'Subscription constraints',
+      actions: {
+        create: 'Add constraint',
+        search: 'Search subscription constraints...',
+      },
+    },
+    constraintsListing: {
+      index: '#',
+      name: 'Group name',
+      noGroups: 'No groups found',
+      topicsChip: 'topics: ',
+      appliedFilter: '(applied filter: “{filter}”)',
+    },
+    breadcrumbs: {
+      home: 'home',
+      title: 'constraints',
+    },
+    listing: {
+      index: '#',
+      name: 'Name',
+      noConstraints: 'No constraints found',
+      consumersNumberChip: 'consumersNumber: ',
+      appliedFilter: '(applied filter: “{filter}”)',
+    },
+  },
   readiness: {
     title: 'Datacenters Readiness:',
     turnOn: 'Turn on',
     turnOff: 'Turn off',
-    index: 'Index',
+    index: '#',
     datacenter: 'Datacenter',
     isReady: 'Is ready',
     control: 'Control',

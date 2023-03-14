@@ -18,6 +18,11 @@ const router = createRouter({
       name: 'readiness',
       component: () => import('../views/admin/readiness/ReadinessView.vue'),
     },
+    {
+      path: '/constraints',
+      name: 'constraints',
+      component: () => import('../views/admin/constraints/ConstraintsView.vue'),
+    },
   ],
 });
 

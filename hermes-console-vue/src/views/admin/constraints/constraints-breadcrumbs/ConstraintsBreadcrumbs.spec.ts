@@ -1,14 +1,14 @@
 import { render } from '@/utils/test-utils';
-import ReadinessBreadcrumbs from '@/views/admin/readiness/readiness-breadcrumbs/ReadinessBreadcrumbs.vue';
+import ConstraintsBreadcrumbs from '@/views/admin/constraints/constraints-breadcrumbs/ConstraintsBreadcrumbs.vue';
 
-describe('ReadinessBreadcrumbs', () => {
+describe('ConstraintsBreadcrumbs', () => {
   it('should render `home` breadcrumb with an anchor to a home page', () => {
     // given
-    const { getByText } = render(ReadinessBreadcrumbs);
+    const { getByText } = render(ConstraintsBreadcrumbs);
 
     // when
     const element = getByText(
-      'readiness.breadcrumbs.home',
+      'constraints.breadcrumbs.home',
     ) as HTMLAnchorElement;
 
     // then

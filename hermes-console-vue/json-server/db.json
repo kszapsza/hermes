@@ -9,6 +9,25 @@
       "isReady": false
     }
   ],
+  "constraints": {
+    "topicConstraints": {
+      "pl.group.Topic": {
+        "consumersNumber": 2
+      },
+      "pl.someAnotherGroup.Topic": {
+        "consumersNumber": 4
+      }
+    },
+    "subscriptionConstraints":
+      {
+        "pl.group.Topic$subscription": {
+          "consumersNumber": 6
+        },
+        "pl.someAnotherGroup.Topic$someSubscription": {
+          "consumersNumber": 8
+        }
+      }
+  },
   "topics": [
     {
       "id": "pl.allegro.public.group.DummyEvent",
