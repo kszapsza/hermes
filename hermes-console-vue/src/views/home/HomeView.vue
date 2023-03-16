@@ -2,6 +2,7 @@
   import { useTheme } from 'vuetify';
 
   const adminViews: { title: string; to: string }[] = [
+    { title: 'Consistency', to: '/consistency' },
     { title: 'Constraints', to: '/constraints' },
     { title: 'Readiness', to: '/readiness' },
   ];

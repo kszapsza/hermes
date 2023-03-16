@@ -1,4 +1,27 @@
 const en_US = {
+  consistency: {
+    connectionError: {
+      title: 'Connection error',
+      text: 'Could not fetch information about consistency',
+    },
+    breadcrumbs: {
+      home: 'home',
+      title: 'consistency',
+    },
+    inconsistentTopics: {
+      noTopics: 'No inconsistent topics found',
+      appliedFilter: '(applied filter: “{filter}”)',
+      heading: 'Topics existing on kafka cluster but not present in hermes',
+      actions: {
+        delete: 'Remove',
+        search: 'Search inconsistent topics...',
+      },
+      listing: {
+        index: '#',
+        name: 'Topic Name',
+      },
+    },
+  },
   consumerGroups: {
     connectionError: {
       title: 'Connection error',

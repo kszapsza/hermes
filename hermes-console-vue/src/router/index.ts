@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import('../views/admin/constraints/ConstraintsView.vue'),
     },
     {
+      path: '/consistency',
+      name: 'consistency',
+      component: () => import('../views/admin/consistency/ConsistencyView.vue'),
+    },
+    {
       path: '/groups/:groupId/topics/:topicId/subscriptions/:subscriptionId/diagnostics',
       name: 'consumerGroups',
       component: () =>

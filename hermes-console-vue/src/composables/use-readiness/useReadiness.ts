@@ -8,14 +8,14 @@ export function useReadiness() {
 
   const loading = computed(() => !error.value && !datacentersReadiness.value);
 
-  function fetchGroupNames() {
+  function fetchReadiness() {
     axios
       .get<DatacenterReadiness[]>('/readiness/datacenters')
       .then((response) => (datacentersReadiness.value = response.data))
       .catch(() => (error.value = true));
   }
 
-  fetchGroupNames();
+  fetchReadiness();
 
   return {
     datacentersReadiness,
