@@ -23,6 +23,12 @@ const router = createRouter({
       name: 'constraints',
       component: () => import('../views/admin/constraints/ConstraintsView.vue'),
     },
+    {
+      path: '/groups/:groupId/topics/:topicId/subscriptions/:subscriptionId/diagnostics',
+      name: 'consumerGroups',
+      component: () =>
+        import('../views/admin/consumer-groups/ConsumerGroupsView.vue'),
+    },
   ],
 });
 

@@ -7,7 +7,7 @@ import type { Mocked } from 'vitest';
 vitest.mock('axios');
 const mockedAxios = axios as Mocked<typeof axios>;
 
-describe('useSubscription', () => {
+describe('useReadiness', () => {
   it('should hit expected Hermes API endpoints', async () => {
     // given
     mockedAxios.get.mockResolvedValueOnce({ data: dummyDatacentersReadiness });

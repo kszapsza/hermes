@@ -1,4 +1,25 @@
 const en_US = {
+  consumerGroups: {
+    connectionError: {
+      title: 'Connection error',
+      text: 'Could not fetch information about consumerGroups',
+    },
+    title: 'Consumer Groups',
+    groupId: 'GroupId: ',
+    breadcrumbs: {
+      home: 'home',
+      groups: 'groups',
+      title: 'consumer groups',
+    },
+    listing: {
+      type: 'Type',
+      partition: 'Partition',
+      currentOffset: 'Current Offset',
+      endOffset: 'End Offset',
+      lag: 'Lag',
+      host: 'Host: ',
+    },
+  },
   constraints: {
     connectionError: {
       title: 'Connection error',
@@ -38,7 +59,7 @@ const en_US = {
     },
   },
   readiness: {
-    title: 'Datacenters Readiness:',
+    title: 'Datacenters Readiness',
     turnOn: 'Turn on',
     turnOff: 'Turn off',
     index: '#',
@@ -231,6 +252,7 @@ const en_US = {
       owners: 'Owners',
       unauthorizedTooltip: 'Sign in to edit the subscription',
       actions: {
+        diagnostics: 'Diagnostics',
         suspend: 'Suspend',
         activate: 'Activate',
         edit: 'Edit',
