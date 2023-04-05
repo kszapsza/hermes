@@ -2,12 +2,12 @@
   import { computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   const { t } = useI18n();
-  
+
   const props = defineProps<{
     inconsistentTopics: string[];
     filter?: string;
   }>();
-  
+
   const filteredTopics = computed(() => {
     return props.inconsistentTopics.filter(
       (topic) => !props.filter || topic.includes(props.filter),
@@ -34,7 +34,7 @@
             {{ topic }}
           </td>
           <td class="text-right">
-            <v-btn prepend-icon="mdi-delete" color="red">
+            <v-btn variant="text" prepend-icon="mdi-delete" color="red">
               {{ t('consistency.inconsistentTopics.actions.delete') }}
             </v-btn>
           </td>
