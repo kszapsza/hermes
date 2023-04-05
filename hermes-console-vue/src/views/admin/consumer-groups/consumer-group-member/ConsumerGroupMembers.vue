@@ -13,7 +13,9 @@
   <v-table>
     <thead>
       <tr>
-        <th class="text-left">{{ t('consumerGroups.listing.type') }}</th>
+        <th class="text-left">
+          {{ t('consumerGroups.listing.type') }}
+        </th>
         <th class="text-left">
           {{ t('consumerGroups.listing.partition') }}
         </th>
@@ -23,7 +25,9 @@
         <th class="text-left">
           {{ t('consumerGroups.listing.endOffset') }}
         </th>
-        <th class="text-left">{{ t('consumerGroups.listing.lag') }}</th>
+        <th class="text-left">
+          {{ t('consumerGroups.listing.lag') }}
+        </th>
       </tr>
     </thead>
     <tbody v-for="item in props.members" :key="item">

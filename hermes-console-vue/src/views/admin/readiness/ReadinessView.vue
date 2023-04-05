@@ -14,7 +14,7 @@
   <v-container fill-height fluid class="mx-auto">
     <v-row dense>
       <v-col md="12">
-        <readiness-breadcrumbs></readiness-breadcrumbs>
+        <readiness-breadcrumbs />
         <loading-spinner v-if="loading" />
         <console-alert
           v-if="error"

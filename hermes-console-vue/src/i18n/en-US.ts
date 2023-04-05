@@ -77,7 +77,7 @@ const en_US = {
       index: '#',
       name: 'Name',
       noConstraints: 'No constraints found',
-      consumersNumberChip: 'consumersNumber: ',
+      consumersNumberChip: 'consumers number: ',
       appliedFilter: '(applied filter: “{filter}”)',
     },
   },

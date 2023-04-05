@@ -8,7 +8,7 @@ vitest.mock('axios');
 const mockedAxios = axios as Mocked<typeof axios>;
 
 describe('useInconsistentTopics', () => {
-  it('should hit expected Hermes API endpoints', async () => {
+  it('should hit expected Hermes API endpoint', async () => {
     // given
     mockedAxios.get.mockResolvedValueOnce({ data: dummyInconsistentTopics });
 

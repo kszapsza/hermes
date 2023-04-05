@@ -2,13 +2,15 @@
   import { computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   const { t } = useI18n();
+  
   const props = defineProps<{
     inconsistentTopics: string[];
     filter?: string;
   }>();
+  
   const filteredTopics = computed(() => {
     return props.inconsistentTopics.filter(
-      (topic) => !props.filter || topic.indexOf(props.filter) !== -1,
+      (topic) => !props.filter || topic.includes(props.filter),
     );
   });
 </script>

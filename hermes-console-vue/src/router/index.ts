@@ -14,22 +14,22 @@ const router = createRouter({
       component: () => import('../views/subscription/SubscriptionView.vue'),
     },
     {
-      path: '/readiness',
+      path: '/readiness/',
       name: 'readiness',
       component: () => import('../views/admin/readiness/ReadinessView.vue'),
     },
     {
-      path: '/constraints',
+      path: '/constraints/',
       name: 'constraints',
       component: () => import('../views/admin/constraints/ConstraintsView.vue'),
     },
     {
-      path: '/consistency',
+      path: '/consistency/',
       name: 'consistency',
       component: () => import('../views/admin/consistency/ConsistencyView.vue'),
     },
     {
-      path: '/groups/:groupId/topics/:topicId/subscriptions/:subscriptionId/diagnostics',
+      path: '/groups/:groupId/topics/:topicId/subscriptions/:subscriptionId/diagnostics/',
       name: 'consumerGroups',
       component: () =>
         import('../views/admin/consumer-groups/ConsumerGroupsView.vue'),

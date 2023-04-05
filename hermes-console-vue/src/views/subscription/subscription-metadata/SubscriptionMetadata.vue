@@ -61,7 +61,7 @@
         />
         <v-btn
           v-if="props.authorized"
-          @click="onDiagnosticsClick"
+          to="./diagnostics"
           color="green"
           prepend-icon="mdi-doctor"
         >

@@ -8,7 +8,7 @@ vitest.mock('axios');
 const mockedAxios = axios as Mocked<typeof axios>;
 
 describe('useConstraints', () => {
-  it('should hit constraints Hermes API endpoints', async () => {
+  it('should hit constraints Hermes API endpoint', async () => {
     // given
     mockedAxios.get.mockResolvedValueOnce({ data: [] });
 
@@ -49,7 +49,6 @@ describe('useConstraints', () => {
   it('should set error to true on workload endpoint failure', async () => {
     // given
     mockedAxios.get.mockRejectedValueOnce({});
-    mockedAxios.get.mockResolvedValueOnce({ data: dummyConstraints });
 
     // when
     const { error } = useConstraints();

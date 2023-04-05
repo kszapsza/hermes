@@ -22,7 +22,7 @@ describe('ConsumerGroupMembers', () => {
 
     props.members.forEach((member, index) => {
       expect(
-        within(rows[index + 1]).getByText(/host 123.11.22.33/),
+        within(rows[index + 1]).getByText(/host 123\.11\.22\.33/),
       ).toBeInTheDocument();
       member.partitions.forEach(
         ({ partition, contentType }, partitionIndex) => {
