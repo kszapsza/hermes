@@ -50,6 +50,7 @@
                 <td>{{ item.isReady }}</td>
                 <td class="w-0">
                   <v-btn
+                    variant="text"
                     v-if="!item.isReady"
                     prepend-icon="mdi-console-line"
                     color="green"
@@ -58,6 +59,7 @@
                     {{ t('readiness.turnOn') }}</v-btn
                   >
                   <v-btn
+                    variant="text"
                     v-if="item.isReady"
                     prepend-icon="mdi-console-line"
                     color="red"

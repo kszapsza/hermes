@@ -1,8 +1,6 @@
 <script setup lang="ts">
   import { State } from '@/api/subscription';
   import { useI18n } from 'vue-i18n';
-  import { useRoute } from 'vue-router';
-  import router from '@/router';
   import TooltipIcon from '@/components/tooltip-icon/TooltipIcon.vue';
   import type { Subscription } from '@/api/subscription';
 
@@ -12,12 +10,6 @@
   }>();
 
   const { t } = useI18n();
-
-  const route = useRoute();
-
-  function onDiagnosticsClick() {
-    router.push({ path: route.path + `/diagnostics` });
-  }
 </script>
 
 <template>

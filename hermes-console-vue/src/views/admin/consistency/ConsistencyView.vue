@@ -29,7 +29,7 @@
     </v-row>
     <v-row dense>
       <v-col md="10">
-        <p class="text-h4 font-weight-bold mb-3">
+        <p class="text-h5 font-weight-bold mb-3">
           {{ t('consistency.inconsistentTopics.heading') }}
         </p>
       </v-col>
