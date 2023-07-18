@@ -12,8 +12,11 @@
   import TopicHeader from '@/views/topic/topic-header/TopicHeader.vue';
 
   const { t } = useI18n();
+
   const route = useRoute();
+
   const { groupId, topicName } = route.params as Record<string, string>;
+
   const {
     topic,
     owner,
@@ -25,6 +28,7 @@
     fetchTopic,
   } = useTopic(topicName);
   fetchTopic();
+
   const breadcrumbsItems = [
     {
       title: t('subscription.subscriptionBreadcrumbs.home'),
